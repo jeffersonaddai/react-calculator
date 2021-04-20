@@ -53,8 +53,6 @@ export const clearMemoryItem = (item, memory) => {
 
 export const memoryReducer = (memory = 0, { type, payload }) => {
     switch (type) {
-        case EXPRESSION_UPDATE_ACTION:
-            return addToMemoryItem(payload[NEW_EXPRESSION_KEY], memory);
         case ADD_MEMORY_ACTION:
             return addToMemoryItem(payload[MEMORY_ITEM_KEY], memory);
         case SUB_MEMORY_ACTION:
